@@ -1,0 +1,62 @@
+
+<html>
+<head>
+  <title>String and Number Operations</title>
+</head>
+<body>
+
+<label>Enter a string</label><br>
+<input type="text" name="str" id="srt1"><br><br>
+
+<label>Enter number</label><br>
+<input type="text" name="text1" id="id1"><br><br>
+
+<label>Enter power</label><br>
+<input type="text" name="test2" id="id2"><br><br>
+
+<button onclick="add()">Get Result</button><br><br>
+
+<label>Length of the String:</label>
+<input type="text" id="strlen"><br><br>
+
+<label>Slice String (5 to 11):</label>
+<input type="text" id="strsli"><br><br>
+
+<label><b><u>Power of a number</u></b></label>
+<input type="text" id="ans"><br><br>
+
+<label><b><u>Square Root of the number</u></b></label>
+<input type="text" id="sqr"><br><br>
+
+<label><b><u>Ceil of the number</u></b></label>
+<input type="text" id="ceil"><br><br>
+
+<label><b><u>Floor of the number</u></b></label>
+<input type="text" id="floor"><br><br>
+
+<script>
+function add() {
+    var s = document.getElementById("srt1").value;
+    var a = parseFloat(document.getElementById("id1").value);
+    var b = parseFloat(document.getElementById("id2").value);
+
+    var sl = s.length;
+    var sli = s.slice(5, 11);
+
+    var power = Math.pow(a, b);
+    var sqrt = Math.sqrt(a);
+    var ceil = Math.ceil(a);
+    var floor = Math.floor(a);
+
+    document.getElementById("strlen").value = sl;
+    document.getElementById("strsli").value = sli;
+    document.getElementById("ans").value = power;
+    document.getElementById("sqr").value = sqrt;
+    document.getElementById("ceil").value = ceil;
+    document.getElementById("floor").value = floor;
+}
+</script>
+
+</body>
+</html>
+
